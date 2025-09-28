@@ -1,0 +1,36 @@
+# Robots.txt for E-Commerce Store
+User-agent: *
+Allow: /
+
+# Allow crawling of product pages
+Allow: /products/
+Allow: /categories/
+Allow: /search/
+
+# Disallow crawling of user-specific pages
+Disallow: /api/
+Disallow: /admin/
+Disallow: /account/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /login/
+Disallow: /register/
+Disallow: /profile/
+Disallow: /orders/
+Disallow: /wishlist/
+
+# Disallow crawling of utility pages
+Disallow: /search?*
+Disallow: /*?sort=*
+Disallow: /*?filter=*
+Disallow: /*?page=*
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://your-domain.com/sitemap.xml
