@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "E-Commerce Store - Shop Quality Products Online",
     description: "Discover our wide selection of quality products with fast shipping and excellent customer service. Shop now for the best deals online.",
-    images: ["/twitter-image.jpg"],
+    images: ["/un.jpg"],
     creator: "@yourstore",
   },
   robots: {

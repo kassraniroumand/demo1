@@ -18,8 +18,8 @@ export const organizationData: WithContext<Organization> = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'E-Commerce Store',
-  url: 'https://your-domain.com',
-  logo: 'https://your-domain.com/logo.png',
+  url: 'demo1-git-main-kassraniroumands-projects.vercel.app',
+  logo: 'demo1-git-main-kassraniroumands-projects.vercel.app/logo.png',
   description: 'Your trusted online store for quality products with fast shipping and excellent customer service.',
   contactPoint: {
     '@type': 'ContactPoint',
@@ -48,11 +48,11 @@ export const websiteData: WithContext<WebSite> = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'E-Commerce Store',
-  url: 'https://your-domain.com',
+  url: 'demo1-git-main-kassraniroumands-projects.vercel.app',
   description: 'Your trusted online store for quality products with fast shipping and excellent customer service.',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://your-domain.com/search?q={search_term_string}',
+    target: 'demo1-git-main-kassraniroumands-projects.vercel.app/search?q={search_term_string}',
   },
 }
 
@@ -61,7 +61,7 @@ export const storeData = {
   '@context': 'https://schema.org',
   '@type': 'Store',
   name: 'E-Commerce Store',
-  image: 'https://your-domain.com/store-image.jpg',
+  image: 'demo1-git-main-kassraniroumands-projects.vercel.app/store-image.jpg',
   description: 'Your trusted online store for quality products with fast shipping and excellent customer service.',
   address: {
     '@type': 'PostalAddress',
@@ -76,7 +76,7 @@ export const storeData = {
     latitude: '40.7128',
     longitude: '-74.0060',
   },
-  url: 'https://your-domain.com',
+  url: 'demo1-git-main-kassraniroumands-projects.vercel.app',
   telephone: '+1-555-123-4567',
   openingHoursSpecification: [
     {
