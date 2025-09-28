@@ -6,7 +6,7 @@ interface SEOConfig {
   keywords?: string[]
   image?: string
   url?: string
-  type?: 'website' | 'article' | 'product'
+  type?: 'website' | 'article'
   publishedTime?: string
   modifiedTime?: string
   author?: string
@@ -20,7 +20,7 @@ export function generateSEO({
   keywords = [],
   image = '/og-image.jpg',
   url,
-  type = 'website',
+  type = 'website' as const,
   publishedTime,
   modifiedTime,
   author,
@@ -77,13 +77,8 @@ export function generateSEO({
     }
   }
 
-  // Add product-specific metadata
-  if (type === 'product') {
-    metadata.openGraph = {
-      ...metadata.openGraph,
-      type: 'product',
-    }
-  }
+  // Note: Product-specific metadata would need custom implementation
+  // as Next.js doesn't support OpenGraph product type natively
 
   return metadata
 }
@@ -108,7 +103,7 @@ export function generateProductSEO(product: {
     description,
     keywords: [product.name, product.category, product.brand || '', 'buy online'].filter(Boolean),
     image: product.image,
-    type: 'product',
+    type: 'website',
   })
 }
 

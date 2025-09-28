@@ -1,7 +1,7 @@
-import { BreadcrumbList, Organization, WebSite } from 'schema-dts'
+import { BreadcrumbList, Organization, WebSite, WithContext } from 'schema-dts'
 
 interface StructuredDataProps {
-  data: Organization | WebSite | BreadcrumbList | any
+  data: WithContext<Organization> | WithContext<WebSite> | WithContext<BreadcrumbList> | Record<string, unknown>
 }
 
 export function StructuredData({ data }: StructuredDataProps) {
@@ -14,9 +14,9 @@ export function StructuredData({ data }: StructuredDataProps) {
 }
 
 // Organization structured data
-export const organizationData: Organization = {
-  '@type': 'Organization',
+export const organizationData: WithContext<Organization> = {
   '@context': 'https://schema.org',
+  '@type': 'Organization',
   name: 'E-Commerce Store',
   url: 'https://your-domain.com',
   logo: 'https://your-domain.com/logo.png',
@@ -44,26 +44,22 @@ export const organizationData: Organization = {
 }
 
 // Website structured data
-export const websiteData: WebSite = {
-  '@type': 'WebSite',
+export const websiteData: WithContext<WebSite> = {
   '@context': 'https://schema.org',
+  '@type': 'WebSite',
   name: 'E-Commerce Store',
   url: 'https://your-domain.com',
   description: 'Your trusted online store for quality products with fast shipping and excellent customer service.',
   potentialAction: {
     '@type': 'SearchAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: 'https://your-domain.com/search?q={search_term_string}',
-    },
-    'query-input': 'required name=search_term_string',
+    target: 'https://your-domain.com/search?q={search_term_string}',
   },
 }
 
 // E-commerce store structured data
 export const storeData = {
-  '@type': 'Store',
   '@context': 'https://schema.org',
+  '@type': 'Store',
   name: 'E-Commerce Store',
   image: 'https://your-domain.com/store-image.jpg',
   description: 'Your trusted online store for quality products with fast shipping and excellent customer service.',
