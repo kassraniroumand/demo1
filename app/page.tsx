@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "E-Commerce Store",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/un.jpg",
         width: 1200,
         height: 630,
         alt: "E-Commerce Store",
