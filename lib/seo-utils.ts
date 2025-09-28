@@ -18,7 +18,7 @@ export function generateSEO({
   title,
   description,
   keywords = [],
-  image = '/og-image.jpg',
+  image = '/un.jpg',
   url,
   type = 'website' as const,
   publishedTime,

@@ -19,7 +19,7 @@ export const organizationData: WithContext<Organization> = {
   '@type': 'Organization',
   name: 'E-Commerce Store',
   url: 'https://demo1-git-main-kassraniroumands-projects.vercel.app',
-  logo: 'https://demo1-git-main-kassraniroumands-projects.vercel.app/logo.png',
+  logo: 'https://demo1-git-main-kassraniroumands-projects.vercel.app/un.jpg',
   description: 'Your trusted online store for quality products with fast shipping and excellent customer service.',
   contactPoint: {
     '@type': 'ContactPoint',
@@ -61,7 +61,7 @@ export const storeData = {
   '@context': 'https://schema.org',
   '@type': 'Store',
   name: 'E-Commerce Store',
-  image: 'https://demo1-git-main-kassraniroumands-projects.vercel.app/store-image.jpg',
+  image: 'https://demo1-git-main-kassraniroumands-projects.vercel.app/un.jpg',
   description: 'Your trusted online store for quality products with fast shipping and excellent customer service.',
   address: {
     '@type': 'PostalAddress',
