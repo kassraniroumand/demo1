@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   applicationName: "E-Commerce Store",
   referrer: "origin-when-cross-origin",
   keywords: ["ecommerce", "online shopping", "retail", "products", "store"],
-  authors: [{ name: "E-Commerce Team", url: "demo1-git-main-kassraniroumands-projects.vercel.app" }],
+  authors: [{ name: "E-Commerce Team", url: "https://demo1-git-main-kassraniroumands-projects.vercel.app" }],
   creator: "E-Commerce Store",
   publisher: "E-Commerce Store",
   formatDetection: {
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("demo1-git-main-kassraniroumands-projects.vercel.app"),
+  metadataBase: new URL("https://demo1-git-main-kassraniroumands-projects.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "demo1-git-main-kassraniroumands-projects.vercel.app",
+    url: "https://demo1-git-main-kassraniroumands-projects.vercel.app",
     siteName: "E-Commerce Store",
     title: "E-Commerce Store - Shop Quality Products Online",
     description: "Your trusted online store for quality products with fast shipping and excellent customer service.",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     yandex: "your-yandex-verification",
     yahoo: "your-yahoo-verification",
     other: {
-      me: ["your@email.com", "demo1-git-main-kassraniroumands-projects.vercel.app"],
+      me: ["your@email.com", "https://demo1-git-main-kassraniroumands-projects.vercel.app"],
     },
   },
 };

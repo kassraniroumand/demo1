@@ -27,7 +27,7 @@ export function generateSEO({
   section,
   tags = [],
 }: SEOConfig): Metadata {
-  const baseUrl = 'https://your-domain.com'
+  const baseUrl = 'https://demo1-git-main-kassraniroumands-projects.vercel.app'
   const fullUrl = url ? `${baseUrl}${url}` : baseUrl
   const fullTitle = title ? `${title} | E-Commerce Store` : 'E-Commerce Store - Shop Quality Products Online'
   const fullDescription = description || 'Your trusted online store for quality products with fast shipping and excellent customer service.'
@@ -134,7 +134,7 @@ export function generateBreadcrumbStructuredData(breadcrumbs: Array<{ name: stri
       '@type': 'ListItem',
       position: index + 1,
       name: crumb.name,
-      item: `https://your-domain.com${crumb.url}`,
+      item: `https://demo1-git-main-kassraniroumands-projects.vercel.app${crumb.url}`,
     })),
   }
 }
@@ -176,7 +176,7 @@ export function generateProductStructuredData(product: {
       price: product.price,
       priceCurrency: product.currency,
       availability,
-      url: `https://your-domain.com/products/${product.sku}`,
+      url: `https://demo1-git-main-kassraniroumands-projects.vercel.app/products/${product.sku}`,
     },
     aggregateRating: product.rating && product.reviewCount ? {
       '@type': 'AggregateRating',

@@ -33,4 +33,4 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap location
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://demo1-git-main-kassraniroumands-projects.vercel.app/sitemap.xml
